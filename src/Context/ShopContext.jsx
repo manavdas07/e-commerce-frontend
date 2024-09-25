@@ -15,7 +15,7 @@ const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
  
   useEffect(() => {
-    fetch('https://e-commerce-backend-tgg2.onrender.com/allproducts')
+    fetch('https://e-commerce-backend-rqvo.onrender.com/allproducts')
       .then((response) => response.json())
       .then((data) => {
         console.log('Fetched products:', data);
@@ -29,7 +29,7 @@ const ShopContextProvider = (props) => {
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }))
     if(localStorage.getItem('auth-token')){
-       fetch('https://e-commerce-backend-tgg2.onrender.com/addtocart',{
+       fetch('https://e-commerce-backend-rqvo.onrender.com/addtocart',{
         method:'POST',
         headers:{
           Accept:'application/form-data',

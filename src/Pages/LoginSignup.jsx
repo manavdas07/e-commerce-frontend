@@ -17,7 +17,7 @@ const LoginSignup = () => {
     console.log("Login Function Executed", formData);
     let responseData;
     try {
-      const response = await fetch('https://e-commerce-backend-tgg2.onrender.com/login', {
+      const response = await fetch('https://e-commerce-backend-rqvo.onrender.com/login', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
@@ -42,7 +42,7 @@ const LoginSignup = () => {
     console.log("Signup Function Executed", formData);
     let responseData;
     try {
-      const response = await fetch('https://e-commerce-backend-tgg2.onrender.com/signup', {
+      const response = await fetch('https://e-commerce-backend-rqvo.onrender.com/signup', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
